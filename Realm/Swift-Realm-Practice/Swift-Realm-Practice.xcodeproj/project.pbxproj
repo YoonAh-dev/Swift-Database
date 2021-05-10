@@ -15,6 +15,7 @@
 		EDCA3BB22648E3C0008CEFCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3BB02648E3C0008CEFCF /* LaunchScreen.storyboard */; };
 		EDCA3BBB2648F554008CEFCF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCA3BBA2648F554008CEFCF /* Realm.framework */; };
 		EDCA3BBD2648F556008CEFCF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCA3BBC2648F556008CEFCF /* RealmSwift.framework */; };
+		EDCA3BC326491B34008CEFCF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA3BC226491B34008CEFCF /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EDCA3BB32648E3C0008CEFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDCA3BBA2648F554008CEFCF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		EDCA3BBC2648F556008CEFCF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		EDCA3BC226491B34008CEFCF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				EDCA3BAE2648E3C0008CEFCF /* Assets.xcassets */,
 				EDCA3BB02648E3C0008CEFCF /* LaunchScreen.storyboard */,
 				EDCA3BB32648E3C0008CEFCF /* Info.plist */,
+				EDCA3BC226491B34008CEFCF /* UserInfo.swift */,
 			);
 			path = "Swift-Realm-Practice";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCA3BC326491B34008CEFCF /* UserInfo.swift in Sources */,
 				EDCA3BAA2648E3BF008CEFCF /* ViewController.swift in Sources */,
 				EDCA3BA62648E3BF008CEFCF /* AppDelegate.swift in Sources */,
 				EDCA3BA82648E3BF008CEFCF /* SceneDelegate.swift in Sources */,
