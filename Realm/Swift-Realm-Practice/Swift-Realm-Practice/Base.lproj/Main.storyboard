@@ -48,6 +48,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNO-vi-5n3">
                                         <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
                                         <state key="normal" title="read"/>
+                                        <connections>
+                                            <action selector="touchUpRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2Y-yQ-fRN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNY-y0-RWe">
                                         <rect key="frame" x="71" y="0.0" width="32" height="30"/>
@@ -59,10 +62,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML5-NE-vqX">
                                         <rect key="frame" x="143" y="0.0" width="48" height="30"/>
                                         <state key="normal" title="update"/>
+                                        <connections>
+                                            <action selector="touchUpUpdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8hv-KV-4hk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSN-sz-oVF">
                                         <rect key="frame" x="231" y="0.0" width="43" height="30"/>
                                         <state key="normal" title="delete"/>
+                                        <connections>
+                                            <action selector="touchUpDelete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dMs-pc-6Zt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
