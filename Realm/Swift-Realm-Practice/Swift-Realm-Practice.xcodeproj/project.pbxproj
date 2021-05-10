@@ -13,6 +13,8 @@
 		EDCA3BAD2648E3BF008CEFCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3BAB2648E3BF008CEFCF /* Main.storyboard */; };
 		EDCA3BAF2648E3C0008CEFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3BAE2648E3C0008CEFCF /* Assets.xcassets */; };
 		EDCA3BB22648E3C0008CEFCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCA3BB02648E3C0008CEFCF /* LaunchScreen.storyboard */; };
+		EDCA3BBB2648F554008CEFCF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCA3BBA2648F554008CEFCF /* Realm.framework */; };
+		EDCA3BBD2648F556008CEFCF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCA3BBC2648F556008CEFCF /* RealmSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EDCA3BAE2648E3C0008CEFCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDCA3BB12648E3C0008CEFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDCA3BB32648E3C0008CEFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCA3BBA2648F554008CEFCF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		EDCA3BBC2648F556008CEFCF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCA3BBB2648F554008CEFCF /* Realm.framework in Frameworks */,
+				EDCA3BBD2648F556008CEFCF /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,7 @@
 			children = (
 				EDCA3BA42648E3BF008CEFCF /* Swift-Realm-Practice */,
 				EDCA3BA32648E3BF008CEFCF /* Products */,
+				EDCA3BB92648F554008CEFCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,15 @@
 			path = "Swift-Realm-Practice";
 			sourceTree = "<group>";
 		};
+		EDCA3BB92648F554008CEFCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA3BBC2648F556008CEFCF /* RealmSwift.framework */,
+				EDCA3BBA2648F554008CEFCF /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +93,7 @@
 				EDCA3B9E2648E3BF008CEFCF /* Sources */,
 				EDCA3B9F2648E3BF008CEFCF /* Frameworks */,
 				EDCA3BA02648E3BF008CEFCF /* Resources */,
+				EDCA3BBE2648F58A008CEFCF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +148,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDCA3BBE2648F58A008CEFCF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDCA3B9E2648E3BF008CEFCF /* Sources */ = {
@@ -287,6 +326,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swift-Realm-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +348,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swift-Realm-Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
